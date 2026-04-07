@@ -28,18 +28,19 @@ Welcome to my personal configuration files. Credit goes to JakooLit and Inir. Th
 Ensure you have the following installed (via `pacman` or `yay`):
 ```bash
 yay -S hyprland niri quickshell-git waybar kitty starship-bin fish wallust-git rofi-wayland
+```
 2. Clone the Repository
-Bash
-
+```bash
 cd ~/.config
 git clone [https://github.com/shebaww/Dot-Files-Arch-Linux-Hyprland.git](https://github.com/shebaww/Dot-Files-Arch-Linux-Hyprland.git) .
+```
 3. Apply Wallpapers
 This setup uses swww for wallpapers. Run the following to initialize:
 
-Bash
-
+```bash
 swww init
 wallust run /path/to/your/wallpaper.jpg
+```
 ⚠️ Notes
 Personal Files: Sensitive data (Firebase keys, VPN configs, personal journals) has been excluded for security.
 
