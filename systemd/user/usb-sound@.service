@@ -1,0 +1,8 @@
+[Unit]
+Description=USB Sound Notification (%i)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/play-usb-sound %i
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=/home/nahom/.Xauthority"

@@ -1,0 +1,103 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "0eda8d993512d67aaf71fe99c631cc5897f94ac6a83fb8f700f16f577c2211d5",
+    "telemetry.devDeviceId": "9d1fec2a-b7b5-4c4a-8732-f96e3d474bae",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/nahom/Documents/Code/Tutorials/python"
+            }
+        ],
+        "emptyWindows": [
+            {
+                "backupFolder": "1773783476009"
+            }
+        ]
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/nahom/Documents/Code/Websites/JavaScript%20Practice": "__default__profile__",
+            "file:///home/nahom/Documents/Code/Games": "__default__profile__",
+            "file:///run/media/nahom/Passport%3F%3F/My-Movies": "__default__profile__",
+            "file:///home/nahom/Documents/Code/Tutorials/python": "__default__profile__",
+            "file:///home/nahom/Documents/Code/Websites/Business_Club": "__default__profile__"
+        },
+        "emptyWindows": {
+            "1773783476009": "__default__profile__"
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "backupPath": "/home/nahom/.config/VSCodium/Backups/1773783476009",
+            "uiState": {
+                "mode": 0,
+                "x": 0,
+                "y": 0,
+                "width": 480,
+                "height": 521
+            }
+        },
+        "openedWindows": []
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#2a2d2c",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#bcc0cc",
+            "background": "#2a2d2c",
+            "editorBackground": "#2a2d2c",
+            "titleBarBackground": "#2a2d2c",
+            "titleBarBorder": "#2a2d2c",
+            "activityBarBackground": "#2a2d2c",
+            "activityBarBorder": "#2a2d2c",
+            "sideBarBackground": "#2a2d2c",
+            "sideBarBorder": "#2a2d2c",
+            "statusBarBackground": "#2a2d2c",
+            "statusBarBorder": "#2a2d2c",
+            "statusBarNoFolderBackground": "#a4d0ef",
+            "windowBorder": "#bcc0cc"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 0,
+            "auxiliaryBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 236,
+            "auxiliaryBarWidth": 300,
+            "workspaces": {
+                "cbbcb3bbdfa5102a4fb1dab4e2a53ae5": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "bec3a51c236ddfb8734c9481f21378c4": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "9c0c51e812eac853cbbe19c02101a4e2": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "fc9efc73296d0971c2c49a044768397a": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "9d15f2f259f4aff3ef8ddb0ec3b5a8bd": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                }
+            }
+        }
+    }
+}

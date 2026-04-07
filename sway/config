@@ -1,0 +1,5 @@
+input "40:30:04:04:26:CE" {
+    xkb_layout us
+    xkb_variant mac
+    xkb_options terminate:ctrl_alt_bksp
+}

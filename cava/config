@@ -1,0 +1,11 @@
+[general]
+framerate = 60
+bars = 22
+
+[input]
+method = pulse
+source = auto
+
+[output]
+method = ncurses
+monstercat = 1

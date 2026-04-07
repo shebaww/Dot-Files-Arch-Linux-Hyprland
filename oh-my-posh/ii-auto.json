@@ -1,0 +1,76 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 4,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "executiontime",
+          "style": "plain",
+          "foreground": "#AAABAC",
+          "background": "#1E2020",
+          "template": " {{ .FormattedMs }} ",
+          "properties": {
+            "style": "austin",
+            "threshold": 500
+          }
+        },
+        {
+          "type": "status",
+          "style": "plain",
+          "foreground": "#FF9993",
+          "background": "#7F2927",
+          "template": " {{ if gt .Code 0 }}\u2717 {{ .Code }}{{ end }} "
+        },
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "#E5E5E6",
+          "background": "#181A1A",
+          "template": " {{ .Path }} ",
+          "properties": {
+            "style": "full",
+            "folder_separator_icon": "/"
+          }
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "#C9D2D5",
+          "background": "#3F484B",
+          "template": " {{ .HEAD }}{{ if .Working.Changed }} \u25cf{{ end }}{{ if .Staging.Changed }} \u271a{{ end }} ",
+          "properties": {
+            "branch_icon": "",
+            "fetch_status": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "rprompt",
+      "segments": [
+        {
+          "type": "time",
+          "style": "plain",
+          "foreground": "#AAABAC",
+          "template": " {{ .CurrentDate | date \"15:04\" }} "
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#BFC8CB",
+          "template": "\u276f "
+        }
+      ]
+    }
+  ]
+}

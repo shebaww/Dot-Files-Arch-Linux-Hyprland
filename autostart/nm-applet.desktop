@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Network Manager
+Exec=sh -c "sleep 2 && /usr/bin/nm-applet --indicator"
+Icon=network-wireless-symbolic
+Comment=Manage network connections
+X-GNOME-Autostart-enabled=true
+StartupNotify=false

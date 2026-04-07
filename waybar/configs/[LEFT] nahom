@@ -1,0 +1,147 @@
+/* Vertical layout adjustments */
+* {
+  font-family: "Font Awesome", sans-serif;
+  font-size: 14px;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+}
+
+window#waybar {
+  background-color: transparent;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: .5s;
+  border-radius: 0 12px 12px 0;
+  margin: 0;
+}
+
+/* Main container - stack modules vertically */
+#waybar > box {
+  /* Vertical stacking */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 4px;
+  min-width: 50px;
+  background-color: rgba(30, 30, 46, 0.9);
+  border-radius: 0 12px 12px 0;
+}
+
+/* Module boxes - adjust for vertical layout */
+.modules-left,
+.modules-center,
+.modules-right {
+  /* Stack modules vertically within each section */
+  flex-direction: column;
+  margin: 4px 0;
+}
+
+/* Individual modules */
+#clock,
+#tray,
+#idle_inhibitor,
+#hyprland-window,
+#mpris,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#temperature,
+#battery,
+#custom-separator {
+  margin: 4px 0;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background-color: rgba(69, 71, 90, 0.6);
+  min-width: 140px;
+  text-align: center;
+}
+
+/* Workspaces - vertical arrangement */
+#workspaces {
+  margin: 4px 0;
+  padding: 4px;
+  border-radius: 6px;
+  background-color: rgba(69, 71, 90, 0.6);
+}
+
+#workspaces button {
+  margin: 2px 0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #585b70;
+  background-color: transparent;
+}
+
+#workspaces button.active {
+  color: #cba6f7;
+  background-color: rgba(203, 166, 247, 0.1);
+}
+
+/* Groups - ensure proper vertical layout */
+#group-app_drawer,
+#group-notify,
+#group-laptop,
+#group-mobo_drawer,
+#group-audio,
+#group-status {
+  margin: 4px 0;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background-color: rgba(69, 71, 90, 0.6);
+  min-width: 140px;
+}
+
+/* Tray adjustments */
+#tray {
+  padding: 4px;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+}
+
+/* Clock - make it fit */
+#clock {
+  padding: 4px 8px;
+  font-weight: bold;
+}
+
+/* Window module - truncate text for vertical */
+#hyprland-window {
+  min-width: 140px;
+  max-width: 200px;
+}
+
+/* Separators - adjust for vertical */
+#custom-separator#blank,
+#custom-separator#blank_2 {
+  min-height: 10px;
+  padding: 0;
+  background-color: transparent;
+}
+
+#custom-separator#dot-line,
+#custom-separator#line {
+  min-height: 1px;
+  min-width: 80%;
+  margin: 4px auto;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* If you want to rotate text (optional) */
+
+#clock,
+#hyprland-window,
+#mpris {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
+

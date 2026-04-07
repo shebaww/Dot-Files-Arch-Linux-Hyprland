@@ -1,0 +1,1 @@
+input("Do you like feet?: ")

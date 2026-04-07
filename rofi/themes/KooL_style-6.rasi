@@ -1,0 +1,199 @@
+/**
+ * Improved Rofi theme for Wallust
+ * Enhanced contrast, visual hierarchy, and consistency
+ */
+@theme "~/.config/rofi/wallust/colors-rofi.rasi"
+
+configuration {
+    modi: "window,run,drun";
+    display-drun: "Applications";
+    display-window: "Windows";
+    display-run: "Run";
+    drun-display-format: "{icon} {name}";
+    font: "JetBrainsMono Nerd Font 10";
+    show-icons: true;
+    icon-theme: "Colloid";
+}
+
+/********************
+* Global Properties *
+********************/
+window {
+    transparency: "real";
+    location: center;
+    anchor: center;
+    fullscreen: false;
+    width: 1000px;
+    x-offset: 0px;
+    y-offset: 0px;
+
+    border: 2px solid;
+    border-color: @border-color;
+    border-radius: 15px;
+    cursor: "default";
+    background-color: @background;
+}
+
+/************
+* Layout *
+************/
+mainbox {
+    spacing: 0px;
+    background-color: transparent;
+    orientation: horizontal;
+    children: [ "imagebox", "listbox" ];
+}
+
+imagebox {
+    padding: 20px;
+    background-color: transparent;
+    background-image: url("~/.config/rofi/.current_wallpaper", height);
+    repeat: false;
+    orientation: center;
+    children: [ "inputbar", "dummy", "mode-switcher" ];
+}
+
+listbox {
+    spacing: 20px;
+    padding: 20px;
+    background-color: transparent;
+    orientation: vertical;
+    children: [ "message", "listview" ];
+}
+
+/************
+* Components *
+************/
+/* Input Bar (The main focus) */
+inputbar {
+    enabled: true;
+    spacing: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: @color0; 
+    text-color: @foreground;
+    children: [ "textbox-prompt-colon", "entry" ];
+}
+
+textbox-prompt-colon {
+    enabled: true;
+    expand: false;
+    str: " ";
+    background-color: inherit;
+    text-color: @color13; 
+}
+
+entry {
+    enabled: true;
+    background-color: inherit;
+    text-color: inherit;
+    cursor: text;
+    placeholder: "Search";
+    placeholder-color: inherit;
+}
+
+/* Mode Switcher (Window, Run, Drun) */
+mode-switcher {
+    enabled: true;
+    spacing: 10px;
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: @color0;
+    text-color: @foreground;
+    cursor: pointer;
+}
+
+button selected {
+    background-color: @color11; 
+    text-color: @color0;
+    font-weight: bold;
+}
+
+/* Listview (Results) */
+listview {
+    enabled: true;
+    columns: 1;
+    lines: 8;
+    cycle: true;
+    dynamic: true;
+    scrollbar: false;
+    layout: vertical;
+    reverse: false;
+    fixed-height: true;
+    fixed-columns: true;
+
+    spacing: 10px;
+    background-color: transparent;
+    text-color: @foreground;
+    cursor: "default";
+}
+
+/* List Elements (The individual results) */
+element {
+    enabled: true;
+    spacing: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: @color0; 
+    text-color: @foreground;
+    cursor: pointer;
+}
+
+/* Hover State */
+element selected.normal {
+    background-color: @color11;
+    text-color: @color0;
+}
+
+element normal.active,
+element normal.urgent {
+    background-color: @color1;
+    text-color: @color0;
+}
+
+element-icon {
+    background-color: transparent;
+    text-color: inherit;
+    size: 32px;
+    cursor: inherit;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    cursor: inherit;
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+}
+
+/************
+* Utilities *
+************/
+dummy {
+    background-color: transparent;
+}
+
+message {
+    background-color: transparent;
+}
+
+textbox {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: @color0;
+    text-color: @foreground;
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+}
+
+error-message {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: @color12; 
+    text-color: @color0;
+}

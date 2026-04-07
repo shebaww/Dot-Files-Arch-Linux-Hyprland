@@ -1,0 +1,4 @@
+[sddm]
+enable = true
+theme_name = "sugar-candy"
+wallpaper_dir = "/usr/share/sddm/themes/sugar-candy/Backgrounds/dynamic/"

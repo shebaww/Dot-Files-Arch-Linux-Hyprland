@@ -1,0 +1,11 @@
+[Unit]
+Description=Monitor fingerprint reader and reset if needed
+
+[Service]
+Type=simple
+ExecStart=/home/nahom/.config/hypr/scripts/monitor-fingerprint.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target

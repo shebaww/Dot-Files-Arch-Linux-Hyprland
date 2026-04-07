@@ -1,0 +1,13 @@
+# ~/.config/systemd/user/battery-monitor.service
+[Unit]
+Description=Battery Level Monitor
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/.config/hypr/scripts/battery-alert.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target

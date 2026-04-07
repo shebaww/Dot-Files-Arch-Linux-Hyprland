@@ -1,0 +1,7 @@
+#!/bin/bash
+
+[Desktop Entry]
+Type=Application
+Name=System Reminder
+Exec=/home/$USER/scripts/system_reminder.sh
+X-GNOME-Autostart-enabled=true

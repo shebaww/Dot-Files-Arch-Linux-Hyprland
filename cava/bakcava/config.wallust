@@ -1,0 +1,17 @@
+[color]
+; Background color (uses Wallust's background color)
+background = '{{colors.background.hex}}'
+foreground = '{{colors.foreground.hex}}'
+
+; Gradient colors (using Wallust's color palette)
+gradient_color_1 = '{{colors.color1.hex}}'
+gradient_color_2 = '{{colors.color2.hex}}'
+gradient_color_3 = '{{colors.color3.hex}}'
+gradient_color_4 = '{{colors.color4.hex}}'
+gradient_color_5 = '{{colors.color5.hex}}'
+gradient_color_6 = '{{colors.color6.hex}}'
+gradient_color_7 = '{{colors.color7.hex}}'
+gradient_color_8 = '{{colors.color8.hex}}'
+
+[general]
+bars = 16

@@ -1,0 +1,73 @@
+// File: ~/.config/xkb/symbols/custom_apple
+default partial alphanumeric_keys
+xkb_symbols "basic" {
+
+    include "us(mac)" // Start with the US Mac variant
+
+    // Override individual keys
+    // Format: key <KEYCODE> { [ NewSymbol1, NewSymbol2, NewSymbol3, NewSymbol4 ] };
+
+    // Reset all keys to normal first
+    // Then apply specific remappings
+
+    // Number row modifications
+    key <TLDE> { [         `,          tilde,              `,          tilde
+    // Remove any existing interpretations of KPFSL
+    replace key <KPFSL> { [        0,          parenright,         0,          parenright ] };
+
+    // Alternative: try using the keypad zero symbol directly
+    // key <KPFSL> { [        KP_0,     parenright,         KP_0,      parenright ] };
+    key <AE01> { [         1,          exclam,             1,          exclam     ] }; // Keep normal
+    key <AE02> { [         2,          at,                 2,          at         ] }; // Keep normal
+    key <AE03> { [         3,          numbersign,         3,          numbersign ] }; // Keep normal
+    key <AE04> { [         4,          dollar,             4,          dollar     ] }; // Keep normal
+    key <AE05> { [         5,          percent,            5,          percent    ] }; // Keep normal
+    key <AE06> { [         6,          asciicircum,        6,          asciicircum] }; // Keep normal
+    key <AE07> { [         7,          ampersand,          7,          ampersand  ] }; // 7 to 7, Shift+7 to &
+    key <AE08> { [         8,          asterisk,           8,          asterisk   ] }; // 8 to 8, Shift+8 to *
+    key <AE09> { [         9,          parenleft,          9,          parenleft  ] }; // 9 to 9, Shift+9 to (
+    key <AE10> { [         minus,      underscore,         minus,      underscore ] }; // - to -, Shift+- to _
+    key <AE11> { [         equal,      plus,               equal,      plus       ] }; // Keep normal
+
+    // Top row modifications
+    key <AD01> { [         q,          Q,                  q,          Q          ] }; // Keep normal
+    key <AD02> { [         w,          W,                  w,          W          ] }; // Keep normal
+    key <AD03> { [         e,          E,                  e,          E          ] }; // Keep normal
+    key <AD04> { [         r,          R,                  r,          R          ] }; // Keep normal
+    key <AD05> { [         t,          T,                  t,          T          ] }; // Keep normal
+    key <AD06> { [         y,          Y,                  y,          Y          ] }; // Keep normal
+    key <AD07> { [         u,          U,                  u,          U          ] }; // u to u, Shift+u to U
+    key <AD08> { [         i,          I,                  i,          I          ] }; // i to i, Shift+i to I
+    key <AD09> { [         o,          O,                  o,          O          ] }; // o to o, Shift+o to O
+    key <AD10> { [         p,          P,                  p,          P          ] }; // p to p, Shift+p to P
+    key <AD11> { [ bracketleft,  braceleft,        bracketleft,  braceleft  ] }; // Keep normal
+    key <AD12> { [ bracketright, braceright,       bracketright, braceright ] }; // Keep normal
+
+    // Home row modifications
+    key <AC01> { [         a,          A,                  a,          A          ] }; // Keep normal
+    key <AC02> { [         s,          S,                  s,          S          ] }; // Keep normal
+    key <AC03> { [         d,          D,                  d,          D          ] }; // Keep normal
+    key <AC04> { [         f,          F,                  f,          F          ] }; // Keep normal
+    key <AC05> { [         g,          G,                  g,          G          ] }; // Keep normal
+    key <AC06> { [         h,          H,                  h,          H          ] }; // Keep normal
+    key <AC07> { [         j,          J,                  j,          J          ] }; // j to j, Shift+j to J
+    key <AC08> { [         k,          K,                  k,          K          ] }; // k to k, Shift+k to K
+    key <AC09> { [         l,          L,                  l,          L          ] }; // Keep normal
+    key <AC10> { [ semicolon,    colon,             semicolon,    colon      ] }; // ; to ;, Shift+; to :
+    key <AC11> { [ apostrophe,   quotedbl,          apostrophe,   quotedbl   ] }; // Keep normal
+
+    // Bottom row modifications
+    key <AB01> { [         z,          Z,                  z,          Z          ] }; // Keep normal
+    key <AB02> { [         x,          X,                  x,          X          ] }; // Keep normal
+    key <AB03> { [         c,          C,                  c,          C          ] }; // Keep normal
+    key <AB04> { [         v,          V,                  v,          V          ] }; // Keep normal
+    key <AB05> { [         b,          B,                  b,          B          ] }; // Keep normal
+    key <AB06> { [         n,          N,                  n,          N          ] }; // Keep normal
+    key <AB07> { [         m,          M,                  m,          M          ] }; // m to m, Shift+m to M
+    key <AB08> { [     comma,      less,               comma,      less       ] }; // Keep normal
+    key <AB09> { [    period,      greater,            period,      greater    ] }; // . to ., Shift+. to >
+    key <AB10> { [     slash,      question,           slash,      question   ] }; // / to /, Shift+/ to ?
+
+    // Caps Lock (treated same as shift for the specified keys)
+    // Caps Lock behavior is handled by the modifier system, not individual key definitions
+};

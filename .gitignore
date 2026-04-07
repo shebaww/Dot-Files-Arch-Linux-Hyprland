@@ -1,0 +1,116 @@
+# ==============================================================================
+# NAHOM'S DOTFILES GITIGNORE
+# ==============================================================================
+
+# --- [ SYSTEM & BINARY JUNK ] ---
+# These are binary databases or machine-specific files that don't belong on GitHub
+.DS_Store
+Thumbs.db
+*.log
+*.sqlite3
+dconf
+pavucontrol.ini
+user-dirs.dirs
+user-dirs.locale
+mimeapps.list*
+kwinoutputconfig.json
+Trolltech.conf
+goa-1.0/
+gvfs/
+menus/
+Notion/
+# --- [ PRIVACY & SECURITY ] ---
+# NEVER push these: they contain tokens, journals, or account info
+.env
+*.pem
+gh/
+netlify/
+'Mullvad VPN'/
+Proton/
+jrnl/
+psiphonlinuxgui/
+torbrowser/
+'Raspberry Pi'/
+*history
+fish/fish_history
+lazygit/state.yml
+Code/
+firebase/
+cairo-dock/third-party/*
+# --- [ APP BLOAT & LARGE DATA ] ---
+# These folders are huge or contain user data rather than "configs"
+'Arduino IDE'/
+arduino-ide/
+backintime/
+backups/
+blender/
+Claude/
+cura/
+Electron/
+Ferdium/
+figma-linux/
+GIMP/
+go/
+libvirt/
+obs-studio/
+onlyoffice/
+supertuxkart/
+swappy-backup-*/
+vesktop/
+Vesktop/
+vlc/
+xarchiver/
+yelp/
+ghidra/
+supertuxkart/
+
+# --- [ CACHE & TEMP FILES ] ---
+*.swp
+*.swo
+*~
+*.old
+*.bak
+*.tmp
+__pycache__/
+node_modules/
+.next/
+.venv/
+bin/
+pkg/
+target/
+configstore/
+
+# --- [ DESKTOP SPECIFIC (KDE/GNOME) ] ---
+# These are often auto-generated and messy
+baloofilerc
+kactivitymanagerdrc
+kapmanrc
+kconf_updaterc
+kglobalshortcutsrc
+killbotsrc
+ksnakeduelrc
+ktimezonedrc
+kwinrc
+plasma-localerc
+lxtask.conf
+
+# --- [ DEVELOPMENT TOOLS ] ---
+# Keep settings, but ignore workspace-specific bloat
+.vscode/
+.idea/
+*.sublime-workspace
+
+# ==============================================================================
+# THE "KEEP" SECTION (Explicitly allow these even if patterns above match)
+# ==============================================================================
+!hypr/
+!niri/
+!quickshell/
+!quickshell-inir/
+!waybar/
+!starship.toml
+!foot/
+!ghostty/
+!kitty/
+!alacritty/
+!fish/config.fish

@@ -1,0 +1,51 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+/* Wallpaper Effects */
+@import "~/.config/rofi/config.rasi"
+
+/* ---- Mainbox ---- */
+mainbox {
+  children: [ "inputbar", "wallpaper", "listview"];
+}
+
+/* ---- Entry ---- */
+entry {
+  placeholder: " 🏙️ Search / Choose desired wallpaper effect";
+}
+
+/* ---- Window ---- */
+window {
+  width: 60%;
+  height: 50%;
+}
+
+/* ---- Wallpaper Preview ---- */
+wallpaper {
+  expand:           false;
+  height:           200px;
+  background-image: url("~/.config/hypr/wallpaper_effects/.wallpaper_modified", width);
+  background-color: transparent;
+  padding:          0px;
+  margin:           0px;
+}
+
+/* ---- Listview ---- */
+listview {
+  columns: 2;
+  lines: 7;
+  fixed-height: false;
+  scrollbar: true;
+  spacing: 6px;
+  cycle: true;
+}
+
+/* ---- Element ---- */
+element-icon {
+  size: 0%;
+}
+
+element-text {
+  horizontal-align: 0.0;
+  vertical-align: 0.0;
+  margin: 0px;
+  padding: 0px;
+}
